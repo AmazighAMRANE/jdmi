@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+
+% Geometry and Header/Footer
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Pierre Parrend}
+\fancyhead[C]{Laboratoire de Recherche de l’EPITA}
+\fancyhead[R]{Equipe Sécurité \& Systèmes}
+\fancyfoot[C]{\thepage}
+
+% Custom Info Box
+\newtcolorbox{infobox}{
+	colback=blue!5!white,
+	colframe=blue!75!black,
+	fonttitle=\bfseries\large,
+	title=\faInfo~Info,
+	coltitle=blue,
+	sharp corners,
+	boxrule=0.5mm,
+	width=\textwidth,
+	outer arc=0mm,
+	toprule=0mm,
+	bottomrule=0mm,
+	leftrule=0mm,
+	rightrule=0mm,
+	before skip=10pt,
+	after skip=10pt
+}
+
+% Custom Help Box
+\newtcolorbox{helpbox}{
+	colback=yellow!10!white,
+	colframe=yellow!75!black,
+	fonttitle=\bfseries\large,
+	title=\faQuestionCircle~Aide,
+	coltitle=yellow!75!black,
+	sharp corners,
+	boxrule=0.5mm,
+	width=\textwidth,
+	outer arc=0mm,
+	toprule=0mm,
+	bottomrule=0mm,
+	leftrule=0mm,
+	rightrule=0mm,
+	before skip=10pt,
+	after skip=10pt
+}
+
+% Section Title Customization
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{\color{red}}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{\color{red}}
+
+\begin{document}
+	
+	\section*{Exemple d'infobox et de helpbox}
+	
+	\begin{infobox}
+		Vous avez intercepté plusieurs échanges de messages. À vous de les déchiffrer !
+	\end{infobox}
+	
+	\begin{helpbox}
+		À l’aide du texte clair saurez-vous déchiffrer le message codé ?
+	\end{helpbox}
+	
+\end{document}

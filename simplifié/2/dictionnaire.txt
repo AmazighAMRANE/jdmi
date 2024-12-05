@@ -1,0 +1,27 @@
+a	AA
+b	AD	
+c	AF
+d	AG
+e	AV
+f	AX
+g	DA
+h	DD
+i	DF
+j	DG
+k	DV
+l	DX
+m	FA
+n	FD
+o	FF
+p	FG
+q	FV
+r	FX
+s	GA
+t	GD
+u	
+v	GG
+w	GV
+x	
+y
+z
+
