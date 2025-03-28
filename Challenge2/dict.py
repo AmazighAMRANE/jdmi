@@ -66,9 +66,14 @@ def dechiffrer_message(fichier, dictionnaire):
     except FileNotFoundError:
         print(f"Le fichier {fichier} n'a pas été trouvé.")
         return
-    
+    # La variable dictionnaire est un mappage où chaque clé représente une paire de lettres chiffrées 
+    # et chaque valeur correspond à la lettre déchiffrée associée.
+    # Ce mappage est basé sur les données fournies dans le fichier dictionnaire.txt.
+    # Par exemple dicitionnaire[AA] = a    
     dictionnaire = {v: k for k, v in dictionnaire.items() if v}
     
+    
+    #Construction du déchiffré"
     message_dechiffre = ""
 
     paires_chiffrees = contenu.split()
