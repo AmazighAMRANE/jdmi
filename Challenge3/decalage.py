@@ -38,7 +38,7 @@ def main():
     
     # Permutation des positions pour chaque caractère du bloc 
     permutation = 	# C'est une liste de taille taille_bloc où à chaque position i de la permutation on met la position entre 0 et taille_bloc où devrait être la ieme lettre d'un bloc
-    
+    '''Exemple : Si le texte chiffré est abcdef, la taille du block est 3 et la permutation est [2,1,0] alors après déchiffrement on obtient : cbafed'''
     
     
     ''' Lire le message chiffré à partir du fichier '''
