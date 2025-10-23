@@ -79,7 +79,7 @@ def dechiffrer_message(fichier, dictionnaire):
     paires_chiffrees = contenu.split()
     for pair in paires_chiffrees:
         if len(pair) == 2 and pair in dictionnaire:
-            message_dechiffre += pair + " " # Remplacer "pair" par sa valeur dans la variable dictionnaire
+            message_dechiffre += dictionnaire[pair] + " "
         else:
             message_dechiffre += pair + " "
     
