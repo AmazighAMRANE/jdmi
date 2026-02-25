@@ -13,7 +13,7 @@ def decrypt_cesar_cipher(ciphertext, shift):
             	base =  ord('A')
             else :
             	base =  ord('a')
-            decrypted_message += chr((ord(char) - base - shift) % 26 + base) 
+            decrypted_message += char # Il faudrait annuler le décalage ici. Il faut utiliser les fonctions ord(char) et char(integer). Attention, il n'y a pas que 26 caractères en ASCII...
         else:
             decrypted_message += char
     return decrypted_message
