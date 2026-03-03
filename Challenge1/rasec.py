@@ -13,12 +13,7 @@ def decrypt_cesar_cipher(ciphertext, shift):
             	base =  ord('A')
             else :
             	base =  ord('a')
-            ''' Plutôt que de rajouter char, il faudrait rajouter son déchiffré. 
-            Il faut utiliser les fonctions ord(char) et char(integer). 
-            Attention, il n'y a pas que 26 caractères en ASCII...
-            "decrypted_message += char - shift" ne marche pas à tout les coups 
-            '''
-            decrypted_message += char 
+            decrypted_message += chr((ord(char) - base - shift) % 26 + base)  
         else:
             decrypted_message += char
     return decrypted_message
