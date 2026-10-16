@@ -88,8 +88,8 @@ def dechiffrer_message(fichier, dictionnaire):
     print() 
 
 """ Nom des fichiers contenant le dictionnaire et le message chiffré """
-fichier_dictionnaire =  # Mettre le fichier contenant le dictionnaire
-fichier_message = 	# Mettre le chemin vers le fichier contenant le message chiffré
+fichier_dictionnaire = "dictionnaire.txt" # Mettre le fichier contenant le dictionnaire
+fichier_message = "message2.txt"	# Mettre le chemin vers le fichier contenant le message chiffré
 
 
 alphabet_dict = lire_dictionnaire(fichier_dictionnaire)
