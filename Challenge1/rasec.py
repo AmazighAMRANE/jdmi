@@ -37,7 +37,7 @@ def main():
     shift = 0 # Modifier le 0 en le shift approprié
     
     """Lire le message chiffré depuis le fichier"""
-    ciphertext = read_file("message1.txt") # Créer le fichier contenant le texte chiffré et donner le chemin vers ce fichier à read_file() 
+    ciphertext = read_file() # Créer le fichier contenant le texte chiffré et donner le chemin vers ce fichier à read_file() 
     
     """ Déchiffrer le message """
     decrypted_message = decrypt_cesar_cipher(ciphertext, shift)

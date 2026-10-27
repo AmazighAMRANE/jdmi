@@ -32,12 +32,12 @@ def read_file(file_path):
 
 def main():
     
-    file_path =	   "ADecaler.txt"    # Chemin du fichier où se trouve le chiffré. Il faut garder les sauts de lignes
+    file_path =	       # Chemin du fichier où se trouve le chiffré. Il faut garder les sauts de lignes
     
-    taille_bloc =   4   # Taille de chaque bloc à réaranger 
+    taille_bloc =      # Taille de chaque bloc à réaranger 
     
     # Permutation des positions pour chaque caractère du bloc 
-    permutation = [0,1,2,3]	# C'est une liste de taille taille_bloc où à chaque position i de la permutation on met la position entre 0 et taille_bloc où devrait être la ieme lettre d'un bloc
+    permutation = 	# C'est une liste de taille taille_bloc où à chaque position i de la permutation on met la position entre 0 et taille_bloc où devrait être la ieme lettre d'un bloc
     '''Exemple : Si le texte chiffré est abcdef, la taille du block est 3 et la permutation est [2,1,0] alors après déchiffrement on obtient : cbafed'''
     
     
